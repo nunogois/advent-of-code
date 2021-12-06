@@ -1,10 +1,6 @@
 const fs = require('fs')
 
-const input = fs
-  .readFileSync('input.txt')
-  .toString()
-  .split('\n')
-  .map(l => +l)
+const input = fs.readFileSync('input.txt').toString().split('\n').map(Number)
 
 let increases = 0
 let block_increases = 0
